@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Jogos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #e0e0e0;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            padding: 10px 20px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .video-item {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            background: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .video-item h3 {
+            margin: 10px;
+            color: #e0e0e0;
+        }
+        .upload-form {
+            background: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .upload-form input[type="file"] {
+            color: #e0e0e0;
+        }
+        .upload-form input[type="submit"] {
+            background: #444;
+            color: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .upload-form input[type="submit"]:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Jogos</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#gallery">Galeria de Vídeos</a></li>
+                <li><a href="#upload">Upload de Vídeos</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Bem-vindo ao Meu Site de Jogos</h2>
+            <p>Aqui você encontrará uma coleção dos melhores momentos dos meus jogos com amigos. Explore, compartilhe e divirta-se!</p>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Galeria de Vídeos</h2>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    <h3>Vídeo de Exemplo 1</h3>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+                    <h3>Vídeo de Exemplo 2</h3>
+                </div>
+                <!-- Adicione mais vídeos aqui -->
+            </div>
+        </section>
+
+        <section id="upload" class="section">
+            <h2>Upload de Vídeos</h2>
+            <form class="upload-form" action="#" method="post" enctype="multipart/form-data">
+                <input type="file" name="video" accept="video/*" required>
+                <input type="submit" value="Upload">
+            </form>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Sobre</h2>
+            <p>Este site foi criado para compartilhar e guardar momentos especiais dos meus jogos. Sinta-se à vontade para explorar e se divertir com os vídeos!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Meu Site de Jogos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
